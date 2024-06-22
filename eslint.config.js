@@ -9,6 +9,12 @@ export default [
 	js.configs.recommended,
 	...ts.configs.recommended,
 	...svelte.configs['flat/recommended'],
+	{
+		files: ['**/*.svelte', '**/*.ts'],
+		rules: {
+			'@typescript-eslint/no-unused-vars': 'off'
+		}
+	},
 	prettier,
 	...svelte.configs['flat/prettier'],
 	{

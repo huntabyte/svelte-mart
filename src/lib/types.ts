@@ -23,6 +23,12 @@ export type Product = {
 	images: string[];
 };
 
+export type CartProduct = {
+	id: string
+	product: Product;
+	quantity: number;
+}
+
 export type Dimensions = {
 	width: number;
 	height: number;
